@@ -1,0 +1,439 @@
+// Item prices
+const waterPrice = 1;
+const sodaPrice = 3;
+const snoothiePrice = 10;
+const nachoPrice = 10;
+const twistPrice = 8;
+const wingPrice = 10;
+const burgerPrice = 18;
+const saladPrice = 10;
+const pizzaPrice = 20;
+const chocolateFountainPrice = 25;
+const lavaCakePrice = 15;
+const donutPrice = 18;
+//Item quanties
+const wQty = document.getElementById("waterqty");
+const sQty = document.getElementById("sodaQty");
+const snQty = document.getElementById("snQty");
+const nQty = document.getElementById("nQty");
+const tQty = document.getElementById("tQty");
+const wingQty = document.getElementById("wingQty");
+const bQty = document.getElementById("bQty");
+const salQty = document.getElementById("salQty");
+const pQty = document.getElementById("pQty");
+const cfQty = document.getElementById("cfQty");
+const lcQty = document.getElementById("lcQty");
+const dQty = document.getElementById("dQty");
+
+function wPlusMinus(){
+    if(wPlusMinus._attached) return;{
+        const plusButton = document.getElementById("wPlus");
+        const minusButton = document.getElementById("wMinus");
+        wPlusMinus._attached = true;
+
+        if(!plusButton || !minusButton || !wQty) return;
+        plusButton.addEventListener("click", function(){
+
+                let currentValue = parseInt(wQty.value) || 0;
+                wQty.value = currentValue + 1;
+                plusButton.disabled = (parseInt(wQty.value) >= 99);
+                minusButton.disabled = false;
+            }
+        )
+
+        minusButton.addEventListener("click", function(){
+            
+
+                let currentValue = parseInt(wQty.value) || 0;
+                wQty.value = Math.max(0, currentValue - 1);
+                minusButton.disabled = (parseInt(wQty.value) <= 0);
+                plusButton.disabled = false;
+
+            }
+        )
+    }
+}
+function sPlusMinus(){
+    if(sPlusMinus._attached) return;{
+        const plusButton = document.getElementById("sPlus");
+        const minusButton = document.getElementById("sMinus");
+        sPlusMinus._attached = true;
+
+        if(!plusButton || !minusButton || !sQty) return;
+        plusButton.addEventListener("click", function(){
+
+                let currentValue = parseInt(sQty.value) || 0;
+                sQty.value = currentValue + 1;
+                plusButton.disabled = (parseInt(sQty.value) >= 99);
+                minusButton.disabled = false;
+            }
+        )
+
+        minusButton.addEventListener("click", function(){
+            
+
+                let currentValue = parseInt(sQty.value) || 0;
+                sQty.value = Math.max(0, currentValue - 1);
+                minusButton.disabled = (parseInt(sQty.value) <= 0);
+                plusButton.disabled = false;
+
+            }
+        )
+    }
+}
+function snPlusMinus(){
+    if(snPlusMinus._attached) return;{
+        const plusButton = document.getElementById("snPlus");
+        const minusButton = document.getElementById("snMinus");
+        snPlusMinus._attached = true;
+
+        if(!plusButton || !minusButton || !snQty) return;
+        plusButton.addEventListener("click", function(){
+
+                let currentValue = parseInt(snQty.value) || 0;
+                snQty.value = currentValue + 1;
+                plusButton.disabled = (parseInt(snQty.value) >= 99);
+                minusButton.disabled = false;
+            }
+        )
+
+        minusButton.addEventListener("click", function(){
+            
+
+                let currentValue = parseInt(snQty.value) || 0;
+                snQty.value = Math.max(0, currentValue - 1);
+                minusButton.disabled = (parseInt(snQty.value) <= 0);
+                plusButton.disabled = false;
+
+            }
+        )
+    }
+}
+function nPlusMinus(){
+    if(nPlusMinus._attached) return;{
+        const plusButton = document.getElementById("nPlus");
+        const minusButton = document.getElementById("nMinus");
+        nPlusMinus._attached = true;
+
+        if(!plusButton || !minusButton || !nQty) return;
+        plusButton.addEventListener("click", function(){
+
+                let currentValue = parseInt(nQty.value) || 0;
+                nQty.value = currentValue + 1;
+                plusButton.disabled = (parseInt(nQty.value) >= 99);
+                minusButton.disabled = false;
+            }
+        )
+
+        minusButton.addEventListener("click", function(){
+            
+
+                let currentValue = parseInt(nQty.value) || 0;
+                nQty.value = Math.max(0, currentValue - 1);
+                minusButton.disabled = (parseInt(nQty.value) <= 0);
+                plusButton.disabled = false;
+
+            }
+        )
+    }
+}
+function tPlusMinus(){
+    if(tPlusMinus._attached) return;{
+        const plusButton = document.getElementById("tPlus");
+        const minusButton = document.getElementById("tMinus");
+        tPlusMinus._attached = true;
+        if(!plusButton || !minusButton || !tQty) return;
+        plusButton.addEventListener("click", function(){
+
+                let currentValue = parseInt(tQty.value) || 0;
+                tQty.value = currentValue + 1;
+                plusButton.disabled = (parseInt(tQty.value) >= 99);
+                minusButton.disabled = false;
+            }
+        )
+
+        minusButton.addEventListener("click", function(){
+            
+
+                let currentValue = parseInt(tQty.value) || 0;
+                tQty.value = Math.max(0, currentValue - 1);
+                minusButton.disabled = (parseInt(tQty.value) <= 0);
+                plusButton.disabled = false;
+
+            }
+        )
+    }
+}
+function wingPlusMinus(){
+    if(wingPlusMinus._attached) return;{
+        const plusButton = document.getElementById("wingPlus");
+        const minusButton = document.getElementById("wingMinus");
+        wingPlusMinus._attached = true;
+        if(!plusButton || !minusButton || !wingQty) return;
+        plusButton.addEventListener("click", function(){
+
+                let currentValue = parseInt(wingQty.value) || 0;
+                wingQty.value = currentValue + 1;
+                plusButton.disabled = (parseInt(wingQty.value) >= 99);
+                minusButton.disabled = false;
+            }
+        )
+
+        minusButton.addEventListener("click", function(){
+            
+
+                let currentValue = parseInt(wingQty.value) || 0;
+                wingQty.value = Math.max(0, currentValue - 1);
+                minusButton.disabled = (parseInt(wingQty.value) <= 0);
+                plusButton.disabled = false;
+
+            }
+        )
+    }
+}
+function bPlusMinus(){
+    if(bPlusMinus._attached) return;{
+        const plusButton = document.getElementById("bPlus");
+        const minusButton = document.getElementById("bMinus");
+        bPlusMinus._attached = true;
+        if(!plusButton || !minusButton || !bQty) return;
+        plusButton.addEventListener("click", function(){
+
+                let currentValue = parseInt(bQty.value) || 0;
+                bQty.value = currentValue + 1;
+                plusButton.disabled = (parseInt(bQty.value) >= 99);
+                minusButton.disabled = false;
+            }
+        )
+
+        minusButton.addEventListener("click", function(){
+            
+
+                let currentValue = parseInt(bQty.value) || 0;
+                bQty.value = Math.max(0, currentValue - 1);
+                minusButton.disabled = (parseInt(bQty.value) <= 0);
+                plusButton.disabled = false;
+
+            }
+        )
+    }
+}
+function salPlusMinus(){
+    if(salPlusMinus._attached) return;{
+        const plusButton = document.getElementById("salPlus");
+        const minusButton = document.getElementById("salMinus");
+        salPlusMinus._attached = true;
+        if(!plusButton || !minusButton || !salQty) return;
+        plusButton.addEventListener("click", function(){
+
+                let currentValue = parseInt(salQty.value) || 0;
+                salQty.value = currentValue + 1;
+                plusButton.disabled = (parseInt(salQty.value) >= 99);
+                minusButton.disabled = false;
+            }
+        )
+
+        minusButton.addEventListener("click", function(){
+            
+
+                let currentValue = parseInt(salQty.value) || 0;
+                salQty.value = Math.max(0, currentValue - 1);
+                minusButton.disabled = (parseInt(salQty.value) <= 0);
+                plusButton.disabled = false;
+
+            }
+        )
+    }
+}
+function pPlusMinus(){
+    if(pPlusMinus._attached) return;{
+        const plusButton = document.getElementById("pPlus");
+        const minusButton = document.getElementById("pMinus");
+        pPlusMinus._attached = true;
+        if(!plusButton || !minusButton || !pQty) return;
+        plusButton.addEventListener("click", function(){
+
+                let currentValue = parseInt(pQty.value) || 0;
+                pQty.value = currentValue + 1;
+                plusButton.disabled = (parseInt(pQty.value) >= 99);
+                minusButton.disabled = false;
+            }
+        )
+
+        minusButton.addEventListener("click", function(){
+            
+
+                let currentValue = parseInt(pQty.value) || 0;
+                pQty.value = Math.max(0, currentValue - 1);
+                minusButton.disabled = (parseInt(pQty.value) <= 0);
+                plusButton.disabled = false;
+
+            }
+        )
+    }
+}
+function cfPlusMinus(){
+    if(cfPlusMinus._attached) return;{
+        const plusButton = document.getElementById("cfPlus");
+        const minusButton = document.getElementById("cfMinus");
+        cfPlusMinus._attached = true;
+        if(!plusButton || !minusButton || !cfQty) return;
+        plusButton.addEventListener("click", function(){
+
+                let currentValue = parseInt(cfQty.value) || 0;
+                cfQty.value = currentValue + 1;
+                plusButton.disabled = (parseInt(cfQty.value) >= 99);
+                minusButton.disabled = false;
+            }
+        )
+
+        minusButton.addEventListener("click", function(){
+            
+
+                let currentValue = parseInt(cfQty.value) || 0;
+                cfQty.value = Math.max(0, currentValue - 1);
+                minusButton.disabled = (parseInt(cfQty.value) <= 0);
+                plusButton.disabled = false;
+
+            }
+        )
+    }
+}
+function lcPlusMinus(){
+    if(lcPlusMinus._attached) return;{
+        const plusButton = document.getElementById("lcPlus");
+        const minusButton = document.getElementById("lcMinus");
+        lcPlusMinus._attached = true;
+        if(!plusButton || !minusButton || !lcQty) return;
+        plusButton.addEventListener("click", function(){
+
+                let currentValue = parseInt(lcQty.value) || 0;
+                lcQty.value = currentValue + 1;
+                plusButton.disabled = (parseInt(lcQty.value) >= 99);
+                minusButton.disabled = false;
+            }
+        )
+
+        minusButton.addEventListener("click", function(){
+            
+
+                let currentValue = parseInt(lcQty.value) || 0;
+                lcQty.value = Math.max(0, currentValue - 1);
+                minusButton.disabled = (parseInt(lcQty.value) <= 0);
+                plusButton.disabled = false;
+
+            }
+        )
+    }
+}
+function dPlusMinus(){
+    if(dPlusMinus._attached) return;{
+        const plusButton = document.getElementById("dPlus");
+        const minusButton = document.getElementById("dMinus");
+        dPlusMinus._attached = true;
+        if(!plusButton || !minusButton || !dQty) return;
+        plusButton.addEventListener("click", function(){
+
+                let currentValue = parseInt(dQty.value) || 0;
+                dQty.value = currentValue + 1;
+                plusButton.disabled = (parseInt(dQty.value) >= 99);
+                minusButton.disabled = false;
+            }
+        )
+
+        minusButton.addEventListener("click", function(){
+            
+
+                let currentValue = parseInt(dQty.value) || 0;
+                dQty.value = Math.max(0, currentValue - 1);
+                minusButton.disabled = (parseInt(dQty.value) <= 0);
+                plusButton.disabled = false;
+
+            }
+        )
+    }
+}
+
+
+function subTotal(){
+    const subTotal = document.getElementById("subtotal")
+
+    subTotal.addEventListener("click", function(){
+    waterTotal = waterPrice * (parseInt(wQty.value, 10) || 0);
+    sodaTotal = sodaPrice * (parseInt(sQty.value, 10) || 0);
+    snoothieTotal = snoothiePrice * (parseInt(snQty.value, 10) || 0);
+    nachoTotal = nachoPrice * (parseInt(nQty.value, 10) || 0);
+    twistTotal = twistPrice * (parseInt(tQty.value, 10) || 0);
+    wingTotal = wingPrice * (parseInt(wingQty.value, 10) || 0);
+    burgerTotal = burgerPrice * (parseInt(bQty.value, 10) || 0);
+    saladTotal = saladPrice * (parseInt(salQty.value, 10) || 0);
+    pizzaTotal = pizzaPrice * (parseInt(pQty.value, 10) || 0);
+    cfTotal = chocolateFountainPrice * (parseInt(cfQty.value, 10) || 0);
+    lcTotal = lavaCakePrice * (parseInt(lcQty.value, 10) || 0);
+    donutTotal = donutPrice * (parseInt(dQty.value, 10) || 0);
+
+    combineTotal = (waterTotal + sodaTotal + snoothieTotal + nachoTotal + twistTotal + wingTotal + burgerTotal + saladTotal + pizzaTotal + cfTotal + lcTotal + donutTotal)
+    document.getElementById("total").innerHTML = combineTotal.toFixed(2)
+
+    // Build itemized list: name, qty, line total
+    const items = [
+        { name: 'Water', qty: parseInt(wQty.value, 10) || 0, total: waterTotal },
+        { name: 'Soda', qty: parseInt(sQty.value, 10) || 0, total: sodaTotal },
+        { name: 'Snoothie', qty: parseInt(snQty.value, 10) || 0, total: snoothieTotal },
+        { name: 'Nachos', qty: parseInt(nQty.value, 10) || 0, total: nachoTotal },
+        { name: 'Twists', qty: parseInt(tQty.value, 10) || 0, total: twistTotal },
+        { name: 'Wings', qty: parseInt(wingQty.value, 10) || 0, total: wingTotal },
+        { name: 'Burger', qty: parseInt(bQty.value, 10) || 0, total: burgerTotal },
+        { name: 'Salad', qty: parseInt(salQty.value, 10) || 0, total: saladTotal },
+        { name: 'Pizza', qty: parseInt(pQty.value, 10) || 0, total: pizzaTotal },
+        { name: 'Chocolate Fountain', qty: parseInt(cfQty.value, 10) || 0, total: cfTotal },
+        { name: 'Lava Cake', qty: parseInt(lcQty.value, 10) || 0, total: lcTotal },
+        { name: 'Donut', qty: parseInt(dQty.value, 10) || 0, total: donutTotal }
+    ];
+
+    const itemizedEl = document.getElementById('itemizedList');
+    if (itemizedEl) {
+        let html = '';
+        items.forEach(it => {
+            if (it.qty > 0) {
+                html += `<li>${it.name} Qty ${it.qty} — $${it.total.toFixed(2)}</li>`;
+            }
+        });
+        itemizedEl.innerHTML = html || '<li>No items selected</li>';
+    }
+
+    return combineTotal;
+    }
+)
+}
+
+function taxTotal(){
+    const subTotalBtn = document.getElementById("subtotal");
+    const tax = 0.05;
+    if (!subTotalBtn) return;
+
+    subTotalBtn.addEventListener("click", function(){
+        const totalEl = document.getElementById("total");
+        const total = totalEl ? parseFloat(totalEl.innerHTML) || 0 : 0;
+        const taxedAmount = total * tax;
+        const grandTotal = total + taxedAmount;
+        const taxEl = document.getElementById("taxTotal");
+        if (taxEl) taxEl.innerHTML = grandTotal.toFixed(2);
+    });
+}
+
+
+document.addEventListener("DOMContentLoaded", wPlusMinus)
+document.addEventListener("DOMContentLoaded", sPlusMinus)
+document.addEventListener("DOMContentLoaded", snPlusMinus)
+document.addEventListener("DOMContentLoaded", nPlusMinus)
+document.addEventListener("DOMContentLoaded", tPlusMinus)
+document.addEventListener("DOMContentLoaded", wingPlusMinus)
+document.addEventListener("DOMContentLoaded", bPlusMinus)
+document.addEventListener("DOMContentLoaded", salPlusMinus)
+document.addEventListener("DOMContentLoaded", pPlusMinus)
+document.addEventListener("DOMContentLoaded", cfPlusMinus)
+document.addEventListener("DOMContentLoaded", lcPlusMinus)
+document.addEventListener("DOMContentLoaded", dPlusMinus)
+document.addEventListener("DOMContentLoaded", subTotal)
+document.addEventListener("DOMContentLoaded", taxTotal)
